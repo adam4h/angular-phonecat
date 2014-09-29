@@ -31,11 +31,14 @@ phonecatAnimations.animation('.phone', function() {
     element.css({
       position: 'absolute',
       left: 0,
-      top: 0
+      top: 0,
+      opacity: '0.5'
     });
 
     jQuery(element).animate({
-      top: -500
+        top: -500,
+        opacity: '1'
+       
     }, done);
 
     return function(cancel) {
